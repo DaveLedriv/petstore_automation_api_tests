@@ -1,5 +1,7 @@
 import random
 
+
+
 def generate_pet_data():
     pet_id = random.randint(1000, 9999)
     return {
@@ -19,4 +21,17 @@ def generate_pet_data():
             }
         ],
         "status": "available"
+    }
+
+
+def generate_order_data():
+    order_id = random.randint(1000, 1999)
+    pet_id = random.randint(1000, 9999)
+    return {
+        "id": 98,
+        "petId": pet_id,
+        "quantity": 1,
+        "shipDate": "2025-04-28T19:18:19.677Z",
+        "status": "placed",
+        "complete": True
     }
